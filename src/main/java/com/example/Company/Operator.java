@@ -4,7 +4,7 @@ package com.example.Company;
 import lombok.Data;
 
 @Data
-public class Operator implements Employee {
+public class Operator extends Employee {
     private double salary;
     private String name;
 

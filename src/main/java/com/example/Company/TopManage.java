@@ -3,12 +3,16 @@ package com.example.Company;
 import lombok.Data;
 
 @Data
-public class TopManage implements Employee {
-private double salary;
+public class TopManage extends Employee {
 
-public TopManage(double salary) {
-    this.salary = salary;
-}
+    private double salary;
+    private String name;
+
+    public TopManage(double salary, String name) {
+        this.salary = salary;
+        this.name = name;
+    }
+
     @Override
     public double getSalary() {
         return salary;

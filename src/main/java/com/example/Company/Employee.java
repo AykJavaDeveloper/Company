@@ -2,7 +2,12 @@ package com.example.Company;
 
 import lombok.Data;
 
-public interface Employee {
+public abstract class Employee {
+    private double salary;
+    private String name;
 
-    double getSalary();
+
+    abstract double getSalary();
+
+    abstract String getName();
 }
