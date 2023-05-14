@@ -6,9 +6,12 @@ import lombok.Data;
 @Data
 public class Operator implements Employee {
     private double salary;
+    private String name;
 
-    public Operator(double salary) {
+    public Operator(double salary, String name) {
         this.salary = salary;
+        this.name = name;
+
     }
 
     @Override
