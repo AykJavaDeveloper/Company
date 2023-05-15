@@ -37,7 +37,8 @@ public class Company {
         }
     }
 
+
     public void getSortedEmployees() {
-        Collections.sort(employees, new ComparableEmployee());
+        Collections.sort(employees, (o1, o2)->-Double.compare(o1.getSalary(), o2.getSalary()));
     }
 }

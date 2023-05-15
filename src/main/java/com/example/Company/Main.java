@@ -17,8 +17,6 @@ public class Main {
 
         Operator operatorOne = new Operator(20_000.0, "Vika");
 
-
-
         Company company = new Company();
 
         company.hire(operator);
@@ -29,8 +27,8 @@ public class Main {
         company.hire(topManager);
         company.hire(topManagerTwo);
 
-
         company.getSortedEmployees();
-        company.getTopSalaryStaff(4);
+        company.outEmployees();
+//        company.getTopSalaryStaff(4);
     }
 }
