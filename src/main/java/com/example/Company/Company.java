@@ -20,9 +20,7 @@ public class Company {
         employees.remove(employee);
     }
     public void outEmployees () {
-        for (Employee employee : employees) {
-            System.out.println(employee);
-        }
+        employees.forEach(System.out::println);
     }
 
     public void getTopSalaryStaff(int count) {
@@ -39,6 +37,7 @@ public class Company {
 
 
     public void getSortedEmployees() {
-        Collections.sort(employees, (o1, o2)->-Double.compare(o1.getSalary(), o2.getSalary()));
+        Collections.sort(employees, Comparator.comparing(Employee::getSalary));
+//        Collections.sort(employees, (o1, o2)->-Double.compare(o1.getSalary(), o2.getSalary()));
     }
 }
